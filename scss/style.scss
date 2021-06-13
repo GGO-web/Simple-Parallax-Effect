@@ -1,0 +1,56 @@
+@import "reset";
+
+body {
+   height: 100vh;
+}
+
+.parallax {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+.parallax-box {
+   position: relative;
+   width: 400px;
+   height: 400px;
+   background: url(../img/kitchen-board.png) center/cover no-repeat;
+}
+
+.parallax-box__item {
+   position: absolute;
+   width: 64px;
+   height: 64px;
+   margin-top: -32px;
+   margin-left: -32px;
+   // transform: translate(-50%, -50%);
+   // transition: all 0.1s ease-in-out;
+}
+
+
+// positioning parallax elements
+.parallax-box__item:nth-child(1) {
+   bottom: 10%;
+   left: 90%;
+}
+
+.parallax-box__item:nth-child(2) {
+   bottom: 40%;
+   left: 20%;
+}
+
+.parallax-box__item:nth-child(3) {
+   bottom: 10%;
+   left: 50%;
+}
+
+.parallax-box__item:nth-child(4) {
+   bottom: 50%;
+   left: 70%;
+}
+
+.parallax-box__item:nth-child(5) {
+   bottom: 70%;
+   left: 40%;
+}
